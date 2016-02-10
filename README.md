@@ -1,5 +1,5 @@
 # DroneDeploy
-This [zip file](https://s3.amazonaws.com/drone.deploy.map.engine/example.zip) contains 24 images of a massive rock near the beautiful Goat Rock Beach in Sonoma, CA. These images can be used to create a 3D reconstruction of the rock which looks like [this](https://sketchfab.com/models/58a312fb79b94867812ecd1f42cd053f)
+This [zip file](https://s3.amazonaws.com/drone.deploy.map.engine/example.zip) contains 24 images of a massive rock near the beautiful Goat Rock Beach in Sonoma, CA. These images can be used to create a 3D reconstruction of the rock which looks like [this](https://sketchfab.com/models/58a312fb79b94867812ecd1f42cd053f).
 
 We would like you to code the first stage of this reconstruction which involves placing the images correctly to create a mosaic. Use the information below about the locations of the cameras to draw all these images in the correct location on the plane. For example:
 
@@ -8,6 +8,7 @@ The camera used to take these images had a 35mm focal length of 2 0.
 The follow gives the locations and pose of each image in the zip file:
 
 &#35; Filename,X,Y,Z,Yaw,Pitch,Roll 
+
 dji_0644.jpg,­123.114661,38.426805,90.689292,9.367337,1.260910,0.385252 
 dji_0645.jpg,­123.114650,38.426831,90.825989,85.055542,­0.336052,1.667057 
 dji_0646.jpg,­123.114429,38.426830,91.088004,88.858391,­0.070967,1.876991 
