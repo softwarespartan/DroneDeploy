@@ -6,7 +6,7 @@ We would like you to code the first stage of this reconstruction which involves 
 The camera used to take these images had a 35mm focal length of 2 0.  
 
 The follow gives the locations and pose of each image in the zip file:
-# Filename,X,Y,Z,Yaw,Pitch,Roll 
+C&#35 Filename,X,Y,Z,Yaw,Pitch,Roll 
 dji_0644.jpg,­123.114661,38.426805,90.689292,9.367337,1.260910,0.385252 
 dji_0645.jpg,­123.114650,38.426831,90.825989,85.055542,­0.336052,1.667057 
 dji_0646.jpg,­123.114429,38.426830,91.088004,88.858391,­0.070967,1.876991 
