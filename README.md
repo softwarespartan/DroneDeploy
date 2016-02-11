@@ -8,7 +8,7 @@ We would like you to code the first stage of this reconstruction which involves 
 
 ![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/example_image_1.png "Example mosaic process")
 
-The camera used to take these images had a 35mm focal length of 2 0.  
+The camera used to take these images had a 35mm focal length of 20mm.  
 
 The follow gives the locations and pose of each image in the zip file:
 
