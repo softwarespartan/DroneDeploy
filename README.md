@@ -1,4 +1,4 @@
-# DroneDeploy
+# DroneDeploy - Reconstruction Challenge
 This [zip file](https://s3.amazonaws.com/drone.deploy.map.engine/example.zip) contains 24 images of a massive rock near the beautiful Goat Rock Beach in Sonoma, CA. These images can be used to create a 3D reconstruction of the rock which looks like this:
 
 ![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/example_image_2.png "Example 3D reconstruction")
