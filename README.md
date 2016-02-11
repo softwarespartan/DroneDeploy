@@ -26,3 +26,29 @@ dji_0653.jpg,-123.114268,38.425751,90.622088,89.052669,1.243665,­1.090830
 dji_0654.jpg,-123.113839,38.425752,91.235595,88.392906,1.794960,­0.221090  
 dji_0655.jpg,-123.113745,38.425749,90.437221,87.186642,1.947206,0.394757  
 dji_0656.jpg,-123.113734,38.425779,90.163445,6.838638,0.624994,­0.674300  
+
+### Solution Outline
+
+There are two primary steps in prepration for creating the mosaic
+
+1. Image rectification
+2. Image georegistration
+
+The process of rectification is to remove perspective distortions due to off-angle camera orientation (i.e. not perfectly vertical over the scene).  Removal of distortions in aerial images is essential for feature extraction and feature matching. The rectification process is direct in this case since yaw, pitch, and roll of the camera has been provided. 
+
+The process of image geo-registration is to determine/assign coordinates to the four corners of the image (or more precisely, coordinates to each pixel of the image).  Typically, the geo-referencing is accomplished by identifying and matching features of an unregistered image with features of a known registered image.  That is, apply sRT transofmation to rectified unregistered images so as to maximally align with geographic reference content.  However, since the external orientation of the camera and focal length are known, determination of the image coordinates in the "world frame" can be calculated.  
+
+### Assumptions
+
+Images metadata is provided for each image which specifies the external orientation of the camera
+
+1. spatial position: longitude [deg], latitude [deg], height [meter] 
+2. angular orientation: yaw [deg], pitch [deg], roll [deg]
+
+Assume that coordinates are WGS84 (f=1/298.257223563) where height is meters above the elliposid.  Furthermore, the simplifying assumption is made that the coordinates provided are the origin (principal point) of the camera/image coordinate system/frame.  
+
+Given angular orientation angles are between 0 and 3 [deg] these images are considered low-oblique images (no horizon).
+
+The camera sensor size is specified as 35mm x 35mm with an associated focal length of 20 mm.  Therefore camera calibration considerations will be omited.
+
+Likewise, corrections for atmospheric refraction and earth curvature will not be considered.
