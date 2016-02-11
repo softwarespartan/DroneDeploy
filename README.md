@@ -3,6 +3,8 @@ This [zip file](https://s3.amazonaws.com/drone.deploy.map.engine/example.zip) co
 
 We would like you to code the first stage of this reconstruction which involves placing the images correctly to create a mosaic. Use the information below about the locations of the cameras to draw all these images in the correct location on the plane. For example:
 
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/example_image_1.png "Example solution")
+
 The camera used to take these images had a 35mm focal length of 2 0.  
 
 The follow gives the locations and pose of each image in the zip file:
