@@ -62,7 +62,7 @@ Given angular orientation angles are between 0 and 3 [deg] these images are cons
 
 The camera sensor size is specified as 35mm x 35mm with an associated focal length of 20 mm.  Therefore camera calibration considerations will be omited.
 
-Likewise, corrections for atmospheric refraction and earth curvature will not be considered.
+Likewise, corrections for atmospheric refraction and earth curvature are not considered.
 
 ### Example Solution
 
@@ -82,5 +82,10 @@ Finally, add transformed alligned images together
 
 ![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np3.png "Example composite image")
 
+Continuing this process, the mosaic can be expanded with additional imagery 
 
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np4.png "Expanding the mosaic")
 
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np5.png "Expanding the mosaic")
+
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np9.png "Expanding the mosaic")
