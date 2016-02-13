@@ -87,5 +87,3 @@ Continuing this process, the mosaic can be expanded with additional imagery
 ![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np4.png "Expanding the mosaic")
 
 ![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np5.png "Expanding the mosaic")
-
-![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np9.png "Expanding the mosaic")
