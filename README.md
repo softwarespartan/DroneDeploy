@@ -26,6 +26,17 @@ dji_0653.jpg,-123.114268,38.425751,90.622088,89.052669,1.243665,­1.090830
 dji_0654.jpg,-123.113839,38.425752,91.235595,88.392906,1.794960,­0.221090  
 dji_0655.jpg,-123.113745,38.425749,90.437221,87.186642,1.947206,0.394757  
 dji_0656.jpg,-123.113734,38.425779,90.163445,6.838638,0.624994,­0.674300  
+dji_0657.jpg,-123.113662,38.426160,91.160272,6.815734,0.945930,0.550999  
+dji_0658.jpg,-123.113591,38.426581,91.454023,8.740611,1.059218,1.088282  
+dji_0659.jpg,-123.113556,38.426807,91.221973,9.253228,1.353285,1.449262  
+dji_0660.jpg,-123.113544,38.426829,90.324952,146.612422,-1.948292,0.194904  
+dji_0661.jpg,-123.113439,38.426665,90.864808,155.415639,-0.917097,1.375369  
+dji_0662.jpg,-123.113183,38.426287,91.956351,155.074334,0.208305,2.160615  
+dji_0663.jpg,-123.113116,38.426189,90.561950,153.763228,0.793427,2.490934  
+dji_0664.jpg,-123.113115,38.426165,90.604094,187.491139,-0.312975,2.836182  
+dji_0665.jpg,-123.113176,38.425826,91.781148,188.845376,0.574889,3.010090  
+dji_0666.jpg,-123.113185,38.425756,91.069673,189.163989,0.764728,2.785707  
+dji_0667.jpg,-123.113198,38.425754,90.750004,301.431548,-2.034127,0.511803  
 
 ### Solution Outline
 
@@ -52,3 +63,24 @@ Given angular orientation angles are between 0 and 3 [deg] these images are cons
 The camera sensor size is specified as 35mm x 35mm with an associated focal length of 20 mm.  Therefore camera calibration considerations will be omited.
 
 Likewise, corrections for atmospheric refraction and earth curvature will not be considered.
+
+### Example Solution
+
+First take two images and rectify them using the camera angular orientation for each image
+
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np0.png "Example image rectification")
+
+Next extract and match features of each image
+
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np1.png "Example image feature extraction and matching")
+
+Estimate transformation between matched points and apply to obtain overlaping images
+
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np2.png "Example transformed overlaping images")
+
+Finally, add transformed alligned images together
+
+![alt text](https://github.com/softwarespartan/DroneDeploy/blob/master/img/np3.png "Example composite image")
+
+
+
